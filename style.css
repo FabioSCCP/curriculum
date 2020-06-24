@@ -1,0 +1,212 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu');
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1, h2, h3, p, figure { /* adicionamos o figure na aula 08 */
+margin: 0;
+padding: 0;
+}
+p{
+    line-height: 1.5;
+}
+body {
+    font-family: Ubuntu, Arial, sans-serif;
+    background-image: url(hypnotize.png);
+    background-attachment: fixed;
+}
+    ul{
+        list-style: none;
+    }
+    /*ul li:before{
+        content: "✓ ";                
+    }*/
+    #contatos{
+        font-size: 15px; 
+        /*border:2px solid red;*/
+        padding-bottom: 5px;               
+    }
+    a:hover, a:link, a:visited, a:active{
+        text-decoration: none;
+        font-style: normal;
+        color: rgb(0, 0, 0);
+    }
+    header{
+        /*border:2px solid rgb(16, 241, 16);*/
+        background-color: black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-height: 203px;
+        margin: auto;    
+        margin-top: 0;        
+    }
+    main{
+        margin: auto;
+        margin-top: 200px;
+        background-color: rgba(255, 255, 255, 0.5);
+        max-width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-shadow: grey 1px 1px 5px;
+    }
+    #cabecalho{
+        max-width: 100%;
+        margin: auto;
+        max-height: 203px;
+        border-bottom:3px solid rgb(214, 182, 1);
+        /* Flexbox
+        Alinhar os links horizontalmente e verticalmente */
+        /* 1o ativamos o modo flex */
+        
+        
+        /* 2o alinhamos horizontalmente ao centro */
+        /*justify-content: left;*/
+        
+        /* 3o alinhamos verticalmente ao centro */
+        /*align-items: center;*/ 
+    }
+    #cont{
+        /*border: 1px solid rgb(255, 255, 255);*/
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #cont > div{
+        width: 100%;
+        /*margin: 0;*/
+    }
+    .foto{
+        /*border:2px solid rgb(20, 16, 241);*/
+        max-width: 350px;
+    }
+    #foto01{
+        height: 200px;
+        /*border:2px solid rgb(20, 16, 241);*/
+    }
+    #nome{
+        /*border:2px solid rgb(30, 255, 0);*/
+        /*width: 400px;*/
+        /*margin-left: 200px;*/
+        /*flex: 0 0 350px;*/
+    }
+    .nome01, .nome02, .contato01, .contato02, .contato03{
+        color: white;
+    }
+    .cont01, .cont02, .cont03{color: black; font-size: 15pt;}
+    .nome01{margin-top: 10px; font-size: 50pt;}
+    .nome02{margin-top: 0;}
+    .cont02{}
+    .cont03{margin-top: 5px;}
+    #contato{
+        max-width: 900px;
+        height: 30px;
+        /*margin-left: 10px;*/
+        /*width: 500px;*/
+        position: absolute;
+        margin-left: 420px;
+        margin-top: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*padding-bottom: 10px;   */         
+    } 
+    #menu{ 
+        width: 100%;
+        text-align: center;
+        height: 30px;
+        min-height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+    }
+    #contato a:hover, #contato a:focus {
+        background-color: rgba(214, 182, 1, 0.2);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        text-align: justify;
+    }
+    .tablinks{
+        color: rgb(255, 255, 255);
+    }
+    #quemsou, #cursos, #expe, #contat{
+        margin: auto;
+        width: 80%;
+        margin-bottom: 30px;
+       
+    }
+    #quemsou, #conhecimentos, #cursos, #expe{
+        font-size: 14pt;
+    }
+    #conhecimentos{
+        margin: auto;
+        width: 40%;
+    }
+    #cursos{
+        padding-left: 250px;
+    }
+    
+    p{
+        text-align: justify;
+    }
+    #rodape{
+        margin: auto;
+        text-align: center;
+        display: flex;
+        max-width: 800px;
+        margin-bottom: 30px;
+        height: 30px;
+    }
+    
+    #form-contato {
+        width: 95%;
+        max-width: 700px;
+        margin: auto;    
+    }
+    /* Selecionando todos os inputs e os textareas do formulário de contato*/
+    #form-contato input, #form-contato textarea {
+        border: solid 2px black;
+        width: 100%;
+        padding: 2%;
+    }
+    #form-contato input {
+        height: 50px;
+    }
+    #form-contato button {
+        border: none;
+        padding: 2%;
+        background-color: black;
+        color: white;
+        transition: 0.4s;
+    }
+    #form-contato button:hover, #form-contato button:focus {
+        background-color: dimgray;
+        cursor: pointer; /* mãozinha */
+    }
+
+    #barrinha{
+        width: 50%;
+        height: 10px;
+        border: 1px solid rgb(168, 168, 168);
+        background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 80%, rgb(255, 255, 255) 10% );
+        float: right;
+    }
+    .clearfix{
+        overflow: auto;
+
+    }
+    #conheci{
+        align-items: flex-end;
+        justify-content: end;
+        
+    }
+    
+    .tabcontent {
+    display: none;
+    }
