@@ -5,104 +5,187 @@
     <meta name="viewport" content="widht=device-width, initial-scale=1.0">
     <title>Fábio Silva Carneiro</title>
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <style>
-        ul{
-            list-style: none;
-        }
-        ul li:before{
-            content: "✓ ";                
-        }
-        #contatos{
-            font-size: 15px;    
-        }
-        a:hover{
-            text-decoration: none;
-        }    
-    </style>
-    
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+        
 </head>
-<body class="container">
- <div>   
-    <h2 class="text-center">Fábio Carneiro</h2>
-    <h4 class="text-center">Ermelino Matarazzo - SP</h4>
-    <p class="text-center" id="contatos"><a target="_blank" href="https://api.whatsapp.com/send?phone=5511990150699"><img src="icon-tel.png" alt="icone para ligação telefonica">&nbsp;<img src="icon-whats.png" alt="icone para enviar WhatsApp">&nbsp;11 9.9015.0699</a></p>
-    <p class="text-center" id="contatos"><a target="_blank" href="mailto:fabioscp14@gmail.com"><img src="icon-mail.png" alt="icone para enviar e-mail">&nbsp;fabioscp14@gmail.com</a></p>
-    <p class="text-center" id="contatos"><a target="_blank" href="https://github.com/FabioSCCP"><img src="icon-github.png" alt="icone para acessar o repositório git hub">&nbsp;Github</a></p>
- </div>    
- 
-   <hr>
-
- <div>        
-        <p><span class="bg-warning"><strong>Objetivo: </strong></span>atuar na área de desenvolvimento de softwares</p>
-        <p><span class="bg-warning"><strong>Conheça-me: </strong></span>Formado pela Escola Panamericana de Arte, atuo a mais de 16 anos na área de comunicação, contudo, estou buscando novos horizontes e dedico-me atualmente à área de programação.
-        Procuro unir meus conhecimentos às novas tecnologias crescentes no mercado, como Java, Python, HTML5, CSS3, Javascript e MySQL para aplicações desktop, Web e mobile.
-        Sou dedicado, organizado e  focado com o objetivo de ser Desenvolvedor.</p>
-        <p><span class="bg-warning"><strong>Conhecimentos: </strong></span></p>
-            <ul>
-                <li>HTML5, CSS3 e JavaScript</li>
-                <li>Lógica de Programação</li>
-                <li>Versionamento Git</li>
-                <li>Photoshop</li>
-                <li>Corel Draw</li>
-                <li>Brackets</li>
-                <li>Eclipse</li>
-                <li>NetBeans</li>
-                <li>Pacote Ofice</li>            
-            </ul>
-            
-        <p><span class="bg-warning"><strong>Cursos Complementares</strong></span></p>
-            <ul>
-                <li>Formação: Escola Panamericana de Arte</li>
-                    <ul>
-                        <li>Desenho</li>
-                        <li>Designer Gráfico</li>
-                        <li>Multimídia</li>
-                    </ul>
-                <li>Curso Técnico - Senac</li>
-                    <ul>
-                        <li>PhotoShop / CorelDraw</li>
-                        <li>Lógica de Programação</li>
-                        <li>HTML5 / CSS3</li>
-                        <li>JavaScript e jQuery</li>
-                    </ul>
-                <li>Curso Superior - Uninove</li>
-                    <ul>
-                        <li>Sistemas de Informação (cursando)</li>
-                    </ul>
-            </ul>    
-  
- </div>
+<body>
+    <header>
+    <div id="cabecalho">
+        <div id="cont">
+            <div class="foto">
+                <img id="foto01" src="Montagem02.jpg" alt="">
+            </div>  
+            <div id="nome">   
+                <h2 class="nome01">Fábio Carneiro</h2>
+                <h4 class="nome02">Ermelino Matarazzo - SP</h4>
+            </div> 
+            <div id="contato">
+                <a id="menu" class="tablinks" onclick="openCity(event, 'quemsou')">Quem sou?</a>
+                <a id="menu" class="tablinks" onclick="openCity(event, 'conhecimentos')">Habilidades</a>
+                <a id="menu" class="tablinks" onclick="openCity(event, 'cursos')">Cursos</a>
+                <a id="menu" class="tablinks" onclick="openCity(event, 'expe')">Experiência</a>
+                <a id="menu" class="tablinks" onclick="openCity(event, 'contat')">Contato</a>
+            </div>   
+        </div>
+    </div>
+    </header>
    
-      <hr>
-      
- <div>            
-    <p><span class="bg-warning"><strong>Experiência Profissional</strong></span></p>
-        <p class="bg-info"><span><strong>Empresa: </strong>Casa do Psicólogo Livraria e Editora</span></p>
-        <p><span><strong>Cargo: </strong>Diagramador</span></p>
-        <p><span><strong>Atividades: </strong>Diagramação, Editoração e Emendas em Livros de Psicologia.</span></p>
-        <p><span><strong>Período: </strong>Ano - 1999</span></p>
+
+   <main>
+    <div id="quemsou" class="tabcontent">        
+            <p><span class="bg-warning"><strong>Objetivo:<br> </strong></span>atuar na área de desenvolvimento de softwares</p>
+            <br><p><span class="bg-warning"><strong>Conheça-me: <br></strong></span>Formado pela Escola Panamericana de Arte, atuo a mais de 16 anos na área de comunicação, contudo, estou buscando novos horizontes e dedico-me atualmente à área de programação.
+            <br>Procuro unir meus conhecimentos às novas tecnologias crescentes no mercado, como Java, Python, HTML5, CSS3, Javascript e MySQL para aplicações desktop, Web e mobile.
+            <br>Sou dedicado, organizado e  focado com o objetivo de ser Desenvolvedor.</p>
+            
+    </div>   
+    <div id="conhecimentos" class="tabcontent">
+        <p><span class="bg-warning"><strong>Habilidades Profissionais: </strong></span></p><br>
+        
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 90%, rgb(255, 255, 255) 10% );"> HTML5 e CSS3 </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 40%, rgb(255, 255, 255) 10% );"> JavaScript </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 70%, rgb(255, 255, 255) 10% );"> Lógica de Programação  </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 30%, rgb(255, 255, 255) 10% );"> Versionamento Git </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 95%, rgb(255, 255, 255) 10% );"> Photoshop </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 95%, rgb(255, 255, 255) 10% );"> Corel Draw </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 85%, rgb(255, 255, 255) 10% );"> Brackets </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 80%, rgb(255, 255, 255) 10% );"> Visual Studio Code </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 70%, rgb(255, 255, 255) 10% );"> Eclipse </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 70%, rgb(255, 255, 255) 10% );"> NetBeans </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 70%, rgb(255, 255, 255) 10% );"> Pacote Ofice </div><br>
+        <hr>
+        <p><span class="bg-warning"><strong>Habilidades Pessoais: </strong></span></p><br>
+        
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 98%, rgb(255, 255, 255) 10% );"> Criação </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 95%, rgb(255, 255, 255) 10% );"> Diagramação </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 95%, rgb(255, 255, 255) 10% );"> Produção </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 90%, rgb(255, 255, 255) 10% );"> Finalização </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 90%, rgb(255, 255, 255) 10% );"> Coordenação </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 95%, rgb(255, 255, 255) 10% );"> Organização </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 95%, rgb(255, 255, 255) 10% );"> Trabalho em equipe </div>
+        <div id="conheci" class="clearfix"> <img id="barrinha" style="background: linear-gradient(to right, rgb(214, 182, 1) 0%, rgb(214, 182, 1) 98%, rgb(255, 255, 255) 10% );"> Comprometimento </div>
+        
+    </div>
+    <div id="cursos" class="tabcontent">            
+            <p><span class="bg-warning"><strong>Cursos</strong></span></p>
+                <ul>
+                    <li><strong>Formação: Escola Panamericana de Arte</strong></li>
+                        <ul>
+                            <li>Desenho</li>
+                            <li>Designer Gráfico</li>
+                            <li>Multimídia</li>
+                        </ul><br>
+                    <li><strong>Curso Técnico - Senac</strong></li>
+                        <ul>
+                            <li>PhotoShop / CorelDraw</li>
+                            <li>Lógica de Programação</li>
+                            <li>HTML5 / CSS3</li>
+                            <li>JavaScript e jQuery</li>
+                            <li>Web Designer</li>
+                        </ul><br>
+                    <li><strong>Curso Superior - Uninove</strong></li>
+                        <ul>
+                            <li>Sistemas de Informação (cursando)</li>
+                        </ul>
+                </ul>    
+    
+    </div>
+    
+        
+    <div id="expe" class="tabcontent">            
+        <p><span class="bg-warning"><strong>Experiência Profissional</strong></span></p><br>
+            <p class="bg-info"><span><strong>Empresa: </strong>Casa do Psicólogo Livraria e Editora</span></p>
+            <p><span><strong>Cargo: </strong>Diagramador</span></p>
+            <p><span><strong>Atividades: </strong>Diagramação, Editoração e Emendas em Livros de Psicologia.</span></p>
+            <p><span><strong>Período: </strong>Ano - 1999</span></p>
+            <br>
+            <p class="bg-info"><span><strong>Empresa: </strong>HS Comunicação e Atelier Gráfico</span></p>
+            <p><span><strong>Cargo: </strong>Designer Gráfico</span></p>
+            <p><span><strong>Atividades: </strong>Criação, Diagramação e Finalização de Catálogos, Folder, Banner, Out door, Cartão de Visita, Folhetos, Sinalização e Embalagens.</span></p>
+            <p><span><strong>Período: </strong>Ano - 2002</span></p>
+            <br>
+            <p class="bg-info"><span><strong>Empresa: </strong>Rising Comunicação</span></p>
+            <p><span><strong>Cargo: </strong>Diretor de Arte</span></p>
+            <p><span><strong>Atividades: </strong>Responsável por toda a criação e elaboração de campanhas publicitárias, para quase todos os clientes e também para o mais importante cliente desta agência.</span></p>
+            <p><span><strong>Período: </strong>Ano - 2009</span></p>
+            <br>
+            <p class="bg-info"><span><strong>Empresa: </strong>Gráfica Condri Brindes</span></p>
+            <p><span><strong>Cargo: </strong>Diretor de Arte e Arte Finalista</span></p>
+            <p><span><strong>Atividades: </strong>Responsável pela Criação e Finalização de projetos gráficos antes da impressão.</span></p>
+            <p><span><strong>Período: </strong>Ano - 2012</span></p>
+            <br>
+            <p class="bg-info"><strong>Empresa: </strong>STM - Secretaria dos Transportes Metropolitanos</p>
+            <p><span><strong>Cargo: </strong>Estagiário</span></p>
+            <p><span><strong>Atividades: </strong>Suporte técnico para mais de 150 funcionários, desenvolver aplicações web internas e auxiliar no banco de dados.</span></p>
+            <p><span><strong>Período: </strong>Atual</span></p>
+                    
+    </div> 
+    <div id="contat" class="tabcontent">
+        <form action="enviar-email.php" method="post"
+          id="form-contato" name="form-contato">
+               <p>
+                   <label for="nome">Nome:</label>
+                   <input tabindex="5" type="text" id="nome" name="nome" required>
+               </p>
+
+               <p>
+                    <label for="assunto">Empresa:</label>
+                    <input tabindex="9" type="text" id="empresa" name="assunto">
+                </p>
+
+               <p>
+                   <label for="email">E-mail:</label>
+                   <input tabindex="6" type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                   <label for="telefone">Telefone:</label>
+                   <input tabindex="7" type="tel" id="telefone" name="telefone">
+                </p>
+                
+                <p>
+                   <label for="celular">Celular:</label>
+                   <input tabindex="8" type="tel" id="celular" name="celular">
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea tabindex="10" name="mensagem" id="mensagem" cols="50" rows="6"></textarea>
+                </p>
+
+                <p>
+                    <button tabindex="12" id="limpar" nome="limpar"
+                    type="reset">Limpar campos</button>
+
+                    <button tabindex="11" id="enviar" nome="enviar"
+                    type="submit">Enviar dados</button>
+                </p>
+        </form>
         <br>
-        <p class="bg-info"><span><strong>Empresa: </strong>HS Comunicação e Atelier Gráfico</span></p>
-        <p><span><strong>Cargo: </strong>Designer Gráfico</span></p>
-        <p><span><strong>Atividades: </strong>Criação, Diagramação e Finalização de Catálogos, Folder, Banner, Out door, Cartão de Visita, Folhetos, Sinalização e Embalagens.</span></p>
-        <p><span><strong>Período: </strong>Ano - 2002</span></p>
-        <br>
-        <p class="bg-info"><span><strong>Empresa: </strong>Rising Comunicação</span></p>
-        <p><span><strong>Cargo: </strong>Diretor de Arte</span></p>
-        <p><span><strong>Atividades: </strong>Responsável por toda a criação e elaboração de campanhas publicitárias, para quase todos os clientes e também para o mais importante cliente desta agência.</span></p>
-        <p><span><strong>Período: </strong>Ano - 2009</span></p>
-        <br>
-        <p class="bg-info"><span><strong>Empresa: </strong>Gráfica Condri Brindes</span></p>
-        <p><span><strong>Cargo: </strong>Diretor de Arte e Arte Finalista</span></p>
-        <p><span><strong>Atividades: </strong>Responsável pela Criação e Finalização de projetos gráficos antes da impressão.</span></p>
-        <p><span><strong>Período: </strong>Ano - 2012</span></p>
-        <br>
-        <p class="bg-info"><strong>Empresa: </strong>STM - Secretaria dos Transportes Metropolitanos</p>
-        <p><span><strong>Cargo: </strong>Estagiário</span></p>
-        <p><span><strong>Atividades: </strong>Suporte técnico para mais de 150 funcionários, desenvolver aplicações web internas e auxiliar no banco de dados.</span></p>
-        <p><span><strong>Período: </strong>Atual</span></p>
-                  
- </div>    
+        <footer id="rodape">
+            <a class="cont01" style="flex-grow: 3" target="_blank" href="https://api.whatsapp.com/send?phone=5511990150699"><img src="icon-whats.png" alt="icone para enviar WhatsApp">&nbsp;11 9.9015.0699</a>
+            <a class="cont02" style="flex-grow: 4" target="_blank" href="mailto:fabioscp14@gmail.com"><img src="icon-mail.png" alt="icone para enviar e-mail">&nbsp;fabioscp14@gmail.com</a>
+            <a class="cont03" style="flex-grow: 3" target="_blank" href="https://github.com/FabioSCCP"><img src="icon-github.png" alt="icone para acessar o repositório git hub">&nbsp;Github</a>
+        </footer>    
+    </div>
+    </main> 
+    
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+    
 </body>
 </html>
